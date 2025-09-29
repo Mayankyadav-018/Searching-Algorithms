@@ -66,6 +66,119 @@ ii> Binary Search – Efficient search on sorted arrays by repeatedly dividing t
 
 * Helps in validating and filtering data.
 
+
+# Linear Search:
+
+This program demonstrates how to search for a specific element in an array using the Linear Search method. The array is traversed sequentially from start to end, comparing each element with the target value until it is found or the array ends.
+
+ALGORITHM:
+
+1> Start
+
+2> Declare and initialize array
+
+* numbers[] = {10, 25, 30, 45, 50}
+
+3> Define linearSearch function
+
+* Loop i from 0 to size-1
+
+* If arr[i] equals target, return i
+
+*  If element not found, return -1
+
+4> In main function
+
+* Calculate size of array
+
+* Call linearSearch with target element
+
+* If index != -1, display "Target found at index"
+
+* Else, display "Target not found"
+
+5> End
+
+
+# Binary Search:
+
+This program demonstrates how to search for a specific element in a sorted array using the Binary Search method. The array is divided into halves repeatedly, and the middle element is compared with the target until the target is found or the sub-array size becomes zero.
+
+ALGORITHM:
+
+1> Start
+
+2> Declare and initialize sorted array
+
+* numbers[] = {10, 20, 30, 40, 50}
+
+3> Define binarySearch function
+
+* Initialize start = 0 and end = size-1
+
+* While start ≤ end:
+
+* Calculate middle = start + (end - start)/2
+
+* If arr[middle] == target, return middle
+
+* Else if arr[middle] < target, set start = middle + 1
+
+* Else set end = middle - 1
+
+* If element not found, return -1
+
+4> In main function
+
+* Calculate size of array
+
+* Call binarySearch with target element
+
+* If index != -1, display "Target found at index"
+
+* Else, display "Target not found"
+
+5> End
+
+
+# Sequential Search:
+
+This program demonstrates how to search for a specific element in an array using the Sequential Search method. The array is traversed one element at a time until the target is found or the end of the array is reached.
+
+ALGORITHM:
+
+1> Start
+
+2> Declare and initialize array
+
+* numbers[] = {5, 15, 25, 35, 45}
+
+3> Define sequentialSearch function
+
+* Initialize index = 0
+
+* While index < size:
+
+* If arr[index] == target, return index
+
+* Increment index
+
+* If element not found, return -1
+
+4> In main function
+
+* Calculate size of array
+
+* Call sequentialSearch with target element
+
+* If result != -1, display "Target found at index"
+
+* Else, display "Target not found"
+
+5> End
+
+
+
 # Conclusion:
 
 Searching implementation in C++ demonstrates how elements can be located in arrays effectively. Linear search is simple and works on any array, while binary search is faster for sorted arrays. Understanding these methods is fundamental for data handling and algorithm design.
